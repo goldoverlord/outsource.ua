@@ -13,13 +13,13 @@
     --fs-7: 14rem;
     --fs-8: 12rem;
 
-    --gap: 20rem;
-    --gap-: -20rem;
+    --gap: 40rem;
+    --gap-: -40rem;
 
     --offset: 10rem;
     --offset-: -10rem;
 
-    --color-accent: #DA1F39;
+    --color-accent: #35CA37;
     --color-black: #000;
     --color-white: #fff;
 
@@ -276,8 +276,134 @@ h6,
 
 .container {
     width: 100%;
-    max-width: 1320rem;
+    max-width: 1440rem;
     margin: 0 auto;
     padding: 0 var(--gap);
 }
 
+.logo {
+    display: block;
+    z-index: 1000;
+    position: relative;
+    height: 25rem;
+    width: 25rem;
+}
+
+.logo__img--mobile {
+    display: none !important;
+}
+
+.logo__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.nav {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__item {
+    position: relative;
+}
+
+.nav__item:not(:last-child) {
+    margin-right: 64rem;
+}
+
+.nav__link {
+    display: inline-block;
+    font-size: var(--fs-7);
+    color: var(--color-black);
+    font-family: inherit;
+}
+
+.btn {
+    display: block;
+    padding: 16rem 32rem 15rem;
+    line-height: 114.286%;
+    font-size: var(--fs-7);
+    color: var(--color-white);
+    background: var(--color-accent);
+    outline: none;
+    border-radius: 100rem;
+}
+
+.btn--theme_default {}
+
+.btn--theme_black-share {}
+
+.btn__inner {}
+
+.btn__title {}
+
+.btn__icon {}
+
+.paralax {}
+
+.paralax__picture {}
+
+.paralax__picture--bg {}
+
+.paralax__bg-img {}
+
+.paralax__bg-img--one {}
+
+.paralax__bg-img--two {}
+
+
+/* header
+=====================*/
+
+.header {
+    position: sticky;
+    padding: 10rem 0;
+    z-index: 100;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {}
+
+.header__nav {}
+
+.header__btn {}
+
+
+/* intro-section
+=====================*/
+
+.intro-section {}
+
+.intro-section__container {}
+
+.intro-section__picture {}
+
+.intro-section__img {}
+
+.intro-section__row {}
+
+.intro-section__col {}
+
+.intro-section__title {}
+
+.intro-section__btn {}
+
+.intro-section__paralax {}
