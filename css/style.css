@@ -5,7 +5,7 @@
 :root {
     --fs-default: 16rem;
     --fs-1: 64rem;
-    --fs-2: 36rem;
+    --fs-2: 32rem;
     --fs-3: 24rem;
     --fs-4: 22rem;
     --fs-5: 18rem;
@@ -19,16 +19,14 @@
     --offset: 10rem;
     --offset-: -10rem;
 
+    --color-white-dark: #F2F2F2;
+    --color-gray: #CDCDCD;
     --color-accent: #35CA37;
-    --color-black: #000;
+    --color-black: #0B0B0B;
     --color-white: #fff;
-
 
     --ff: Dela Gothic One, sans-serif;
 }
-
-/* fonts
-=====================*/
 
 /* normalize
 =====================*/
@@ -50,7 +48,7 @@ html {
 
 body {
     font-style: normal;
-    background: var(--color-white-dark);
+    background: var(--color-white);
     font-weight: normal;
     font-size: var(--fs-default);
     line-height: 1.6;
@@ -289,6 +287,9 @@ h6,
     width: 25rem;
 }
 
+.logo__img--desctop {
+}
+
 .logo__img--mobile {
     display: none !important;
 }
@@ -300,6 +301,20 @@ h6,
     display: block;
     width: 100%;
     height: 100%;
+}
+
+.img-cover {
+    position: relative;
+    width: 100%;
+}
+
+.img-cover > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .nav {
@@ -329,40 +344,122 @@ h6,
     font-size: var(--fs-7);
     color: var(--color-black);
     font-family: inherit;
+    position: relative;
+    cursor: pointer;
+    transition: color .4s;
+}
+
+.nav__link:after {
+    content: '';
+    position: absolute;
+    top: -10rem;
+    bottom: -10rem;
+    right: -10rem;
+    left: -10rem;
 }
 
 .btn {
-    display: block;
+    display: inline-block;
     padding: 16rem 32rem 15rem;
     line-height: 114.286%;
     font-size: var(--fs-7);
-    color: var(--color-white);
-    background: var(--color-accent);
     outline: none;
+    border: none;
+    transition: all .4s;
+    cursor: pointer;
     border-radius: 100rem;
+    position: relative;
 }
 
-.btn--theme_default {}
+.btn--theme_default {
+    color: var(--color-white);
+    background: var(--color-accent);
+}
 
-.btn--theme_black-share {}
+.btn--theme_default:hover {
+    color: var(--color-black);
+}
 
-.btn__inner {}
+.btn--theme_black-share {
+    padding: 20rem 198rem 20rem 28rem;
+    border: 1rem solid;
+    background-color: var(--color-white-dark);
+}
 
-.btn__title {}
+.btn__inner {
+    display: flex;
+    align-items: center;
+}
 
-.btn__icon {}
+.btn__title {
+    font-size: var(--fs-default);
+    color: var(--color-black);
+}
 
-.paralax {}
+.btn__picture {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 8rem;
+    width: 48rem;
+    height: 48rem;
+    background: var(--color-black);
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn__picture:after {
+    position: absolute;
+    content: '';
+    width: 48rem;
+    height: 48rem;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.btn__icon {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 10rem;
+    height: 8rem;
+    fill: var(--color-white);
+}
+
+.paralax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  }
 
 .paralax__picture {}
 
-.paralax__picture--bg {}
+.paralax__picture--bg {
+}
 
-.paralax__bg-img {}
+.paralax__bg-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: translateZ(0);
+  object-fit: cover;
+}
 
-.paralax__bg-img--one {}
+.paralax__bg-img--one {
+  z-index: 1;
+}
 
-.paralax__bg-img--two {}
+.paralax__bg-img--two {
+  z-index: 2;
+}
 
 
 /* header
@@ -370,6 +467,9 @@ h6,
 
 .header {
     position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
     padding: 10rem 0;
     z-index: 100;
 }
@@ -390,19 +490,38 @@ h6,
 /* intro-section
 =====================*/
 
-.intro-section {}
+.intro-section {
+    padding: 26rem 0 611rem;
+    position: relative;
+}
 
 .intro-section__container {}
 
-.intro-section__picture {}
+.intro-section__picture {
+    height: 265rem;
+    margin-bottom: 24rem;
+}
 
-.intro-section__img {}
+.intro-section__img {
+    object-fit: contain;
+}
 
-.intro-section__row {}
+.intro-section__row {
+    justify-content: space-between;
+    margin-bottom: 50rem;
+}
 
 .intro-section__col {}
 
-.intro-section__title {}
+.intro-section__title {
+    font-size: var(--fs-2);
+}
+
+.intro-section__text {
+    margin: 0;
+    padding: 0;
+    font-size: var(--fs-default);
+}
 
 .intro-section__btn {}
 
