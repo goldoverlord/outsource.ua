@@ -390,14 +390,20 @@ h6,
     padding: 20rem 198rem 20rem 28rem;
     border: 1rem solid;
     background-color: var(--color-white-dark);
+    border-color: var(--color-gray);
 }
 
 .btn--theme_black-share:hover:after {
-    transform: translateY(0%) scale(20);
+    transform: translateY(0%);
+    top: 0;
+    right: 0;
+    width: calc(100% + 2rem);
+    height: calc(100% + 2rem);
+    border-radius: 70rem;
 }
 
 .btn--theme_black-share:hover {
-    border-color: var(--color-black);
+    border-color: transparent;
 }
 
 .btn--theme_black-share:hover .btn__title {
@@ -407,7 +413,7 @@ h6,
 .btn--theme_black-share:after {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%) scale(1);
+    transform: translateY(-50%);
     content: '';
     width: 48rem;
     height: 48rem;
@@ -415,7 +421,7 @@ h6,
     z-index: 0;
     background-color: var(--color-black);
     border-radius: 50%;
-    transition: all 1s;
+    transition: all .4s;
 }
 
 .btn__inner {
@@ -428,18 +434,8 @@ h6,
 .btn__title {
     font-size: var(--fs-default);
     color: var(--color-black);
-
-}
-
-.btn__picture {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 8rem;
-    width: 48rem;
-    height: 48rem;
-    border-radius: 50%;
-    z-index: 1;
+    line-height: 1.5;
+    letter-spacing: -0.32px;
 }
 
 .btn__icon {
@@ -450,6 +446,7 @@ h6,
     width: 10rem;
     height: 8rem;
     fill: var(--color-white);
+    z-index: 3;
 }
 
 .paralax {
@@ -540,12 +537,16 @@ h6,
 
 .intro-section__title {
     font-size: var(--fs-2);
+    line-height: 1.25;
+    letter-spacing: -1.92rem;
 }
 
 .intro-section__text {
     margin: 0;
     padding: 0;
-    font-size: var(--fs-default);
+    font-size: 16rem;
+    line-height: 1.5;
+    letter-spacing: -.32rem;
 }
 
 .intro-section__btn {}

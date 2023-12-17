@@ -18,7 +18,7 @@
   :root {
     --fs-default: 14rem;
     --fs-1: 52rem;
-    --fs-2: 32rem;
+    --fs-2: 36rem;
     --fs-3: 19rem;
     --fs-4: 17rem;
     --fs-5: 15rem;
@@ -39,6 +39,14 @@
     width: 132rem;
     height: 25rem;
   }
+  .intro-section__col {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .intro-section__col:not(:last-child)  {
+    margin-bottom: 16rem;
+  }
+  .intro-section__picture,
   .header__nav,
   .logo__img--desctop {
     display: none;
