@@ -15,6 +15,9 @@
 }
 
 @media (max-width: 1199px){
+}
+
+@media (max-width: 991px) {
   :root {
     --fs-default: 14rem;
     --fs-1: 52rem;
@@ -33,15 +36,25 @@
   }
 
   .header {
-    padding: 8rem 0;
+    padding: 16rem 0;
   }
   .header__logo {
     width: 132rem;
     height: 25rem;
   }
+  .intro-section {
+    padding-top: 16rem;
+    padding-bottom: 24rem;
+  }
+  .intro-section__row {
+    margin-bottom: 0;
+  }
   .intro-section__col {
     flex: 0 0 100%;
     max-width: 100%;
+  }
+  .intro-section__btn {
+    margin-top: 334rem;
   }
   .intro-section__col:not(:last-child)  {
     margin-bottom: 16rem;
@@ -57,18 +70,9 @@
   }
 }
 
-@media (max-width: 767px){
-  :root {
-    --fs-1: 24rem;
-    --fs-2: 18rem;
-  }
-  .btn--size-md {
-      --btn-padding-x: 32rem;
-  }
-  
-}
-
 @media (max-width: 575px){
+  .intro-section__btn {
+    width: 100%;
   
 }
 
