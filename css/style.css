@@ -150,7 +150,7 @@ h6,
 .title-size-6 {
     font-family: 'EuclidSquare', sans-serif;
     margin: 0;
-    font-weight: bold;
+    font-weight: normal;
     color: var(--color-black);
 }
 
@@ -476,6 +476,121 @@ h6,
   z-index: 2;
 }
 
+.slider-control {
+    display: flex;
+    align-items: center;
+}
+
+.slider-control__wrap {
+    display: flex;
+    align-items: center;
+    margin-right: 25rem;
+}
+
+.slider-control__wrap .slider-btn:not(:last-child) {
+    margin-right: 5rem;
+}
+
+.slick-arrow {
+
+}
+
+.slider-btn {
+    background-color: var(--color-white-dark);
+    border: 1rem solid var(--color-gray);
+    width: 48rem;
+    height: 48rem;
+    position: relative;
+    outline: none;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 0;
+    position: relative;
+    transition: all .4s;
+}
+
+.slider-btn:hover {
+    border-color: transparent;
+}
+
+.slider-btn:hover:after {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    height: calc(100% + 2rem);
+    width: calc(100% + 2rem);
+    background-color: var(--color-black);
+}
+
+.slider-btn:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 1rem;
+    height: 1rem;
+    background-color: transparent;
+    transition: all .4s;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.slider-btn:hover .slider-btn__icon {
+    fill: var(--color-white);
+}
+
+.slick-prev {
+
+}
+
+.slider-control__btn {
+
+}
+
+.slider-btn__inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.slider-btn__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10rem;
+    height: 8rem;
+    transform: translate(-50%, -50%) rotate(0);
+    fill: var(--color-black);
+    z-index: 2;
+    transition: all .4s;
+}
+
+.slick-prev .slider-btn__icon {
+    transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.slick-next {
+
+}
+
+.js-intro-slider-dots {
+
+}
+
+.slider-dots {
+
+}
+
+.slider-control__dots {
+
+}
+
+
 
 /* header
 =====================*/
@@ -547,3 +662,16 @@ h6,
 .intro-section__btn {}
 
 .intro-section__paralax {}
+
+/* automated-section
+=====================*/
+
+.automated-section {}
+.automated-section__container {}
+.automated-section__row {}
+.automated-section__col {}
+.automated-section__content {}
+.automated-section__title {}
+.js-intro-slider-control {}
+.automated-section__slider-control {}
+.row__col--9 {}
