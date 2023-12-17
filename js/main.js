@@ -7,6 +7,7 @@
       infinite: true,
       speed: 400,
       slidesToShow: 3,
+      slidesToScroll: 1,
       prevArrow: $('.js-intro-slider-control .slick-prev'),
       nextArrow: $('.js-intro-slider-control .slick-next'),
       appendDots: '.js-intro-slider-dots',
