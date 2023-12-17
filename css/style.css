@@ -126,17 +126,11 @@ time {
     display: block;
 }
 
-body.is-menu-show {
-    overflow: hidden;
+.hidden {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
 }
-
-body.lock .header__dropdown-mb {
-}
-
-
-
-
-body.is-menu-show 
 
 /* typography
 =====================*/
@@ -427,7 +421,6 @@ h6,
 .btn__inner {
     display: flex;
     align-items: center;
-    position: relative;
     z-index: 2;
 }
 
@@ -440,9 +433,9 @@ h6,
 
 .btn__icon {
     position: absolute;
-    transform: translate(-50%, -50%);
+    transform: translateY(-50%);
     top: 50%;
-    left: 50%;
+    right: 26rem;
     width: 10rem;
     height: 8rem;
     fill: var(--color-white);
