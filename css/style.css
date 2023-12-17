@@ -393,7 +393,7 @@ h6,
     right: 0;
     width: calc(100% + 2rem);
     height: calc(100% + 2rem);
-    border-radius: 70rem;
+    border-radius: 80rem;
 }
 
 .btn--theme_black-share:hover {
@@ -421,7 +421,6 @@ h6,
 .btn__inner {
     display: flex;
     align-items: center;
-    z-index: 2;
 }
 
 .btn__title {
@@ -429,6 +428,8 @@ h6,
     color: var(--color-black);
     line-height: 1.5;
     letter-spacing: -0.32px;
+    position: relative;
+    z-index: 2;
 }
 
 .btn__icon {
