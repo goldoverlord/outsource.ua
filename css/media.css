@@ -49,6 +49,7 @@
   .intro-section__row {
     margin-bottom: 0;
   }
+  .automated-section__col,
   .intro-section__col {
     flex: 0 0 100%;
     max-width: 100%;
@@ -67,6 +68,30 @@
   .logo__img--mobile {
     max-width: 132rem;
     display: block !important;
+  }
+  .automated-section__content > .automated-section__title {
+    display: none;
+  }
+  .automated-section__slider-control {
+    margin-top: 28rem;
+    flex-direction: column-reverse;
+  }
+  .slider-control__wrap {
+    margin: 28rem 0 0 0;
+  }
+  .slider-btn {
+    width: 166rem;
+    height: 48rem;
+    border-radius: 50rem;
+  }
+  .slider-btn:after {
+    border-radius: 50rem;
+  }
+  .automated-section__row {
+    flex-direction: column-reverse;
+  }
+  .automated-section__title--mb {
+    display: block;
   }
 }
 

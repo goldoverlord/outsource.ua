@@ -508,8 +508,9 @@ h6,
 }
 
 .slick-arrow {
-
 }
+
+.slider-btn.
 
 .slider-btn {
     background-color: var(--color-white-dark);
@@ -563,7 +564,19 @@ h6,
 }
 
 .slider-control__btn {
-
+    background-color: var(--color-white-dark);
+    border: 1rem solid var(--color-gray);
+    width: 48rem;
+    height: 48rem;
+    position: relative;
+    outline: none;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 0;
+    position: relative;
+    transition: all .4s;
+    backdrop-filter: blur(10px);
 }
 
 .slider-btn__inner {
@@ -690,14 +703,23 @@ h6,
   background-color: #999;
   border-radius: 50%;
   cursor: pointer;
+  transition: all .2s;
+  position: relative;
+  z-index: 0;
 }
 
 .slick-dots li:not(:last-child) {
     margin-right: 2rem;
 }
 
-li.slick-active {
+li.slick-active .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
   background-color: var(--color-black);
+  z-index: 5;
+  position: relative;
+  display: block;
 }
 
 /* header
@@ -792,6 +814,10 @@ li.slick-active {
     font-weight: 400;
     line-height: 1.25;
     letter-spacing: -1.92rem;
+}
+
+.automated-section__title--mb {
+    display: none;
 }
 
 .js-intro-slider-control {}
