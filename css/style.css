@@ -89,7 +89,7 @@ a {
     font-variant-numeric: lining-nums proportional-nums;
     font-size: inherit;
     font-family: EuclidSquare;
-    font-size: 16px;
+    font-size: 16rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -895,7 +895,7 @@ li.slick-active .dot {
 
 .app-section__small-text {
     display: inline-block;
-    font-size: 16px;
+    font-size: 16rem;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
@@ -956,7 +956,7 @@ li.slick-active .dot {
 
 .app-section__list-desription {
     color: var(--color-dark-gray);
-    font-size: 16px;
+    font-size: 16rem;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
@@ -1221,4 +1221,152 @@ li.slick-active .dot {
 }
 
 .iphone-content__menu-iphone-img {
+}
+
+.app-section-content {
+}
+
+.app-section__content {
+}
+
+.app-section-content__title {
+    color: var(--color-white);
+    font-size: 20куь;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: -0.6px;
+    margin: 0 0 28rem 0;
+}
+
+.app-section-content__subtitle {
+    color: var(--color-dark-gray);
+    font-size: 16rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height:  150%;
+    letter-spacing: -0.32px;
+    margin-bottom: 128rem;
+}
+.app-section-content__subtitle .text-accent {
+    font-size: 16rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height:  150%;
+    letter-spacing: -0.32px;
+}
+
+.app-section-content-menu {
+}
+
+.app-section-content__menu {
+}
+
+.app-section-content-menu__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.app-section-content-menu__wrap:not(:last-child) {
+    margin-bottom: 32rem;
+}
+
+.app-section-content-menu__wrap > *:not(:last-child) {
+    margin-right: 10rem;
+}
+
+.app-section-content-menu__title {
+    color: var(--color-dark-gray);
+    font-size: 12rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 183.333%;
+    letter-spacing: -0.12px;
+    text-transform: uppercase;
+}
+
+.app-btn-list {
+}
+
+.app-section-content-menu__btn-list {
+}
+
+.app-btn-list__btn {
+    border: 1rem solid transparent;
+    padding: 12rem 23rem;
+    border-radius: 28rem;
+    font-size: 12rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 133.3333%;
+    letter-spacing: -0.12px;
+    cursor: pointer;
+    outline: none;
+}
+
+.app-btn-list__btn--theme_white {
+    color: var(--color-black);
+    border-color: rgba(221,221,221,.2);
+    background-color: var(--color-gray);
+
+}
+
+.app-btn-list__btn--theme_dark {
+    color: var(--color-white);
+    border-color: rgba(221,221,221,.2);
+    background-color: var(--color-black);
+}
+
+.app-section-content-menu__select-container {}
+
+.select-container {
+    position: relative;
+}
+.select-container__select {}
+
+.select__icon {}
+
+.select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 30rem;
+    cursor: pointer;
+    border: 1rem solid rgba(221,221,221,.2);
+    padding: 12rem 78rem 12rem 75rem;
+    background-color: var(--color-black);
+    color: var(--color-gray);
+    font-weight: 500;
+    line-height: 133.333%;
+    letter-spacing: -0.12rem;
+}
+
+.select option {
+    font-size: inherit;
+    background-color: var(--color-black);
+    color: inherit;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 30rem;
+    cursor: pointer;
+    border: 1rem solid rgba(221,221,221,.2);
+    padding: 12rem 78rem 12rem 75rem;
+    background-color: var(--color-black);
+    color: var(--color-gray);
+    font-weight: 500;
+    line-height: 133.333%;
+    letter-spacing: -0.12rem;
+}
+
+
+.select__icon {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    width: 7rem;
+    height: 5rem;
 }
