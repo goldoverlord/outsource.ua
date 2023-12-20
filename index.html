@@ -82,8 +82,8 @@
                 </div>
                 <div class="paralax intro-section__paralax">
                     <picture class="paralax__picture paralax__picture--bg">
-                        <img src="images/intro-first-laptop.png" alt="Автоматизируем" class="paralax__bg-img paralax__bg-img--one">
-                        <img src="images/intro-second-laptop.png" alt="Автоматизируем" class="paralax__bg-img paralax__bg-img--two">
+                        <img src="images/intro-first-laptop.png" alt="Автоматизируем" id="image1" class="paralax__bg-img paralax__bg-img--one">
+                        <img src="images/intro-second-laptop.png" alt="Автоматизируем" id="image2" class="paralax__bg-img paralax__bg-img--two">
                     </picture>
                 </div>
             </section>
@@ -351,12 +351,59 @@
                                     <div class="app-section-content-menu__wrap">
                                         <h5 class="app-section-content-menu__title">Карточка товара</h5>
                                         <div class="app-btn-list app-section-content-menu__btn-list">
-                                            <button class="app-btn-list__btn app-btn-list__btn--theme_white">
-                                                <img src="images/app-btn-icon-1.svg" alt="" class="app-btn-list__img app-btn-list__img--dark">
+                                            <button class="app-btn-list__btn app-btn-list__btn--theme_white app-btn-list__btn--icon">
+                                                <img src="images/icons/app-btn-icon-1.svg" alt="" class="app-btn-list__img app-btn-list__img--dark">
                                             </button>
-                                            <button class="app-btn-list__btn app-btn-list__btn--theme_dark">
-                                                <img src="images/app-btn-icon-2.svg" alt="" class="app-btn-list__img app-btn-list__img--white">
+                                            <button class="app-btn-list__btn app-btn-list__btn--theme_dark app-btn-list__btn--icon">
+                                                <img src="images/icons/app-btn-icon-2.svg" alt="" class="app-btn-list__img app-btn-list__img--white">
                                             </button>
+                                        </div>
+                                    </div>
+                                    <div class="app-section-content-menu__wrap">
+                                        <h5 class="app-section-content-menu__title">Цвет</h5>
+                                        <div class="app-select-list app-section-content-menu__select-list">
+                                            <div class="app-select-list__item">
+                                                <div class="color-picker app-select-list__color-picker">
+                                                    <label class="color-picker__lable" style="background-color: #ffffff;">
+                                                        <input type="radio" name="colorApp" value="white">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="app-select-list__item">
+                                                <div class="color-picker app-select-list__color-picker">
+                                                    <label class="color-picker__lable" style="background-color: #D0CDC0;">
+                                                        <input type="radio" name="colorApp" value="darkgray">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="app-select-list__item">
+                                                <div class="color-picker app-select-list__color-picker">
+                                                    <label class="color-picker__lable" style="background-color: #FF9800;">
+                                                        <input type="radio" name="colorApp" value="orange">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="app-select-list__item">
+                                                <div class="color-picker app-select-list__color-picker">
+                                                    <label class="color-picker__lable" style="background-color: #9BC7E5;">
+                                                        <input type="radio" name="colorApp" value="blue">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="app-select-list__item">
+                                                <div class="color-picker app-select-list__color-picker">
+                                                    <label  class="color-picker__lable" style="background-color: #C7C2FF;">
+                                                        <input type="radio" name="colorAppe" value="purple">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="app-section-content-menu__wrap">
+                                        <h5 class="app-section-content-menu__title">Скругление</h5>
+                                        <div class="app-slider-container app-section-content-menu__slider-container">
+                                              <input type="range" id="myRange" min="0" max="100" value="50" class="app-slider-container__input">
+                                              <lable for="myRange" class="app-slider-container__lable">12</lable>
                                         </div>
                                     </div>
                                 </div>
@@ -366,6 +413,55 @@
                 </div>
             </section>
             <!-- app-section END -->
+            <!-- footer BEGIN -->
+            <section class="footer">
+                <div class="container footer__container">
+                    <div class="row footer__row">
+                        <div class="row__col footer__col row__col--6">
+                            <div class="footer-content footer__content">
+                                <h3 class="footer-content__title">Расскажем, как заработать больше</h3>
+                                <form action="post" class="form footer-content__form">
+                                    <input type="text" class="form__input" placeholder="Имя">
+                                    <input type="text" class="form__input" placeholder="Телефон">
+                                    <input type="text" class="form__input" placeholder="Ваш бренд">
+                                    
+                                    <input type="text" class="form__input" placeholder="Тип бизнеса">
+                                    <button class="footer-content__btn">Отправить</button>
+                                </form>
+                                <div class="footer-contact footer__contact">
+                                    <h5 class="footer-contact__title">Или свяжитесь с нами</h5>
+                                    <a href="/" class="footer-contact__link">
+                                        <span class="footer-contact__inner">
+                                            <span class="footer-contact__link-icon">
+                                                <span class="footer-contact__icon"></span>
+                                            </span>
+                                            <span class="footer-contact__link-title">@outsorcebusiness</span>
+                                        </span>
+                                    </a>
+                                    <a href="tel:78128871165" class="footer-contact__link">
+                                        <span class="footer-contact__inner">
+                                            <span class="footer-contact__link-icon">
+                                                <span class="footer-contact__icon"></span>
+                                            </span>
+                                            <span class="footer-contact__link-title">+7 (812) 887-11-65</span>
+                                        </span>
+                                    </a>
+                                </div>
+                                <p class="footer__copyright">© 2023 Outsorce</p>
+                            </div>
+                        </div>
+                        <div class="row__col footer__col row__col--6">
+                            <div class="footer__media">
+                                <picture class="picture-cover footer__picture">
+                                    <img src="images/footer-img-1.png" alt="" class="footer__img footer__img--forvard">
+                                    <img src="images/footer-img-2.png" alt="" class="footer__img footer__img--back">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- footer END -->
         </main>
         <!-- main END -->
     </div>
