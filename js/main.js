@@ -1,8 +1,8 @@
 $(document).ready(function() {
-  // Slick Slider
-  var slickSlider = $('.js-automated-section-slick-slider');
+  // Перший слайдер
+  var firstSlider = $('.js-automated-section-slick-slider');
 
-  slickSlider.slick({
+  firstSlider.slick({
     autoplay: false,
     dots: true,
     infinite: false,
@@ -31,43 +31,48 @@ $(document).ready(function() {
     ]
   });
 
-  // Initial Dots Update
-  if (slickSlider.slick('slickCurrentSlide') === 0) {
-    updateDotsClass(0);
-  }
+  // Ініціалізація другого слайдера (замініть класи і параметри на свої)
 
-  // After Change Event
-  slickSlider.on('afterChange', function(event, slick, currentSlide){
-    updateDotsClass(currentSlide);
+  $('.js-admin-section-init').slick({
+    arrows: false,
+    dots: false,
+    speed: 2400,
+    autoplay: true,
+    autoplaySpeed: 0,
+    cssEase: 'linear',
+    variableWidth: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    infinite: true,
+    swipeToSlide: false,
+    centerMode: true,
+    focusOnSelect: true,
   });
 
-  // Function to Update Dots Class
-  function updateDotsClass(currentSlide) {
-    $('.js-intro-slider-dots .dot').removeClass('slick-active');
-    $('.js-intro-slider-dots .dot').slice(currentSlide, currentSlide + 3).addClass('slick-active');
-  }
+  // Інші функції та події можна додавати нижче, якщо потрібно
 
   // Range Slider
-    document.addEventListener("DOMContentLoaded", function() {
-      const rangeInput = document.getElementById("myRange");
+  document.addEventListener("DOMContentLoaded", function() {
+    const rangeInput = document.getElementById("myRange");
 
-      rangeInput.addEventListener("input", function() {
-        rangeInput.classList.toggle("input-active", isSliderThumbAtMax());
-      });
-
-      rangeInput.addEventListener("mousedown", function() {
-        rangeInput.classList.add("input-active");
-      });
-
-      rangeInput.addEventListener("mouseup", function() {
-        rangeInput.classList.remove("input-active");
-      });
-
-      function isSliderThumbAtMax() {
-        const thumbPosition = (rangeInput.value - rangeInput.min) / (rangeInput.max - rangeInput.min);
-        return thumbPosition === 1;
-      }
+    rangeInput.addEventListener("input", function() {
+      rangeInput.classList.toggle("input-active", isSliderThumbAtMax());
     });
+
+    rangeInput.addEventListener("mousedown", function() {
+      rangeInput.classList.add("input-active");
+    });
+
+    rangeInput.addEventListener("mouseup", function() {
+      rangeInput.classList.remove("input-active");
+    });
+
+    function isSliderThumbAtMax() {
+      const thumbPosition = (rangeInput.value - rangeInput.min) / (rangeInput.max - rangeInput.min);
+      return thumbPosition === 1;
+    }
+  });
+
   // Scroll Event
   window.addEventListener("scroll", function() {
     const image1 = document.getElementById("image1");
