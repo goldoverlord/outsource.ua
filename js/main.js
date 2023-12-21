@@ -44,6 +44,8 @@ $(document).ready(function() {
     slidesToShow: 5,
     slidesToScroll: 1,
     infinite: true,
+    swipe: false,
+    draggable: false,
     swipeToSlide: false,
     centerMode: true,
     focusOnSelect: true,
